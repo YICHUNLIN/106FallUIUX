@@ -266,7 +266,7 @@ block content
 						p This is where we operate
 				div.row
 					div.map-content
-						div#map-canvas
+		div#map-canvas
 		div#third-section
 			div.heading
 				div.container
@@ -339,15 +339,14 @@ block content
 											a(href='#', class='#')
 												i.fa.fa-rss
 			// Javascripts
-			script.
+			//script.
 
-				function initialize() {
+				function initMap() {
 					var map = new google.maps.Map(document.getElementById('map-canvas'),{
 						center: { lat: 24.788068, lng: 120.999012},
 						zoom: 8
 					});
 				};
-				google.maps.event.addDomListener(window, 'load', initialize);
 				
 			script(type='text/javascript', src='js/vendor/bootstrap.min.js')
 			script(type='text/javascript', src='js/custom.js')
