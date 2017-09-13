@@ -103,7 +103,7 @@ html {
 }
 
 #big-banner {
-    background-image: url(../images/t1.jpg);
+    background-image: url(../images/t1.JPG);
 	background-position: center;
     background-size: cover;
     margin-top: 50px;
@@ -669,7 +669,7 @@ html {
 }
 
 #map {
-    background-image: url(../images/map-bg.png);
+    background-image: url(../images/t1.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
