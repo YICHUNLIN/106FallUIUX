@@ -1,8 +1,6 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
+.ui.mycelled.grid{
+  width: 100% !important;
+  margin: 1.5em;
+  padding: 0em;
 }
