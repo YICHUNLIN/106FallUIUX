@@ -1,0 +1,324 @@
+extends layout
+
+block content
+
+	header#top.site-header
+		//div.ui.teal.inverted.menu.navbar-fixed-top
+			div.container
+				div.row
+				a.item.home(href='#top')
+					| Home
+				a.item.about(href='#first-section')
+					| Services
+				a.item.smoothScroll(href='#team-section')
+					| Team
+				a.item.portfolio(href='#second-section') Projects
+				a.item.map(href='#map') Location
+				a.item.contact(href='#third-section') Contact
+
+		nav.navbar.navbar-default.navbar-fixed-top
+			div.container
+				div.row
+					div.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+							i.fa.fa-bars
+						div.logo-wrapper
+							a.navbar-brand(href='#templatemo')
+								p
+									| T
+									em imeline
+					div#main-menu.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								span
+								a.home(href='#top') Home
+							li
+								span
+								a.about(href='#first-section') Services
+							li
+								span
+								a.smoothScroll(href='#team-section') Team
+							li
+								span
+								a.portfolio(href='#second-section') Projects
+							li
+								span
+								a.map(href='#map') Location
+							li
+								span
+								a.contact(href='#third-section') Contact
+
+
+		div#big-banner
+			div.container
+				div.row
+					div.col-md-12.col-xs-12
+						ul.main-icons
+		div#first-section
+			div.heading
+				div.container
+					div.row
+						div.col-md-12
+							h2.header-section-title What We Can Do
+		div#first-section1
+			div.container
+				div.row
+					div.triangle
+				div.row
+					div.col-md-12
+						section#cd-timeline.cd-container
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-picture
+									img(src='images/w1.png', alt='Picture')
+								div.cd-timeline-content.service-box-content
+									h2 Milestone 1
+									p
+										| Timeline is free responsive template by 
+										span.blue template
+										span.green mo
+										| . This layout is based on Bootstrap v3.1.1 and you may use this template for any website. Credit goes to 
+										a(rel='nofollow', href='http://unsplash.com') Unsplash
+										|  for all images.
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-movie
+									img(src='images/b2.png', alt='Picture')
+								div.cd-timeline-content.service-box-content
+									h2 Milestone2
+									p
+										| You can easily 
+										strong change top icons
+										|  by looking at guidelines from 
+										a(rel='nofollow', href='http://fontawesome.info/font-awesome-icon-world-map/') Font Awesome
+										| . Example: 
+										strong <i class="fa fa-camera"></i>
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-icon
+									img(src='images/w3.png', alt='Picture')
+								div.cd-timeline-content.service-box-content
+									h2 Milestone3
+									p
+										| Vestibulum ante ipsum priminisieru in faucibus orci luctus et ultrices posuere cubilia Curae unserd Etiam nisl dui, commodo sit amet eget, vel turpis. Suspendisse at est purus.
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-location
+									img(src='images/b4.png', alt='Picture')
+								div.cd-timeline-content.service-box-content
+									h2 Milestone4
+									p
+										| Phasellus lobortis vitae ipsum vitae luctus. Proin sodales mi a arcu iaculis, in dapibus nunc sodales. Maecenas auctor vel eros a dapibus.
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-location
+									img(src='images/w5.png', alt='Picture')
+								div.cd-timeline-content.service-box-content
+									h2 Milestone5
+									p
+										| Phasellus lobortis vitae ipsum vitae luctus. Proin sodales mi a arcu iaculis, in dapibus nunc sodales. Maecenas auctor vel eros a dapibus.
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-location
+									img(src='images/b6.png', alt='Picture')
+								div.cd-timeline-content.service-box-content
+									h2 Milestone6
+									p
+										| Phasellus lobortis vitae ipsum vitae luctus. Proin sodales mi a arcu iaculis, in dapibus nunc sodales. Maecenas auctor vel eros a dapibus.
+
+
+
+		div#team-section
+			div.heading
+				div.container
+					div.row
+						div.col-md-12
+							h2.header-section-title Out Team
+		
+		div#team
+			div.container
+				div.row
+					div.triangle
+				div.row
+					div.col-md-3.col-sm-1
+						a(href="#")
+							img.ui.medium.circular.image.img-responsive(src='/images/vic2.png' )
+					div.col-md-3.col-sm-1
+						a(href="#")
+							img.ui.medium.circular.image.img-responsive(src='/images/vic2.png' )
+					div.col-md-3.col-sm-1
+						a(href="#")
+							img.ui.medium.circular.image.img-responsive(src='/images/vic2.png' )
+					div.col-md-3.col-sm-1
+						a(href="#")
+							img.ui.medium.circular.image.img-responsive(src='/images/vic2.png' )
+
+
+		div#cta
+			div.container
+				div.row
+					div.col-md-12
+						h4 Projects
+						p What we have done
+		//div#second-section
+			div.heading
+				div.container
+					div.row
+						div.col-md-12
+							h2 Latest Work
+		div#second-section
+			div.container
+				div.row
+					div.triangle
+				div.row
+					div.col-md-12
+						section#cd-timeline-2.cd-container
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-picture
+									img(src='images/camera-icon.png', alt='Picture')
+								div.cd-timeline-content.projects
+
+									a(href="#")
+										img(src='images/project-1.jpg', alt='')
+										div.project-content
+											h2 Donec at scelerisque
+											span 18 December 2084
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-picture
+									img(src='images/camera-icon.png', alt='Picture')
+								div.cd-timeline-content.projects
+									a(href="#")
+										img(src='images/project-2.jpg', alt='')
+										div.project-content
+											h2 Nullam hendrerit ultrices
+											span 12 December 2084
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-picture
+									img(src='images/camera-icon.png', alt='Picture')
+								div.cd-timeline-content.projects
+									a(href="#")
+										img(src='images/project-3.jpg', alt='')
+										div.project-content
+											h2 Quisque mollis diam
+											span 10 December 2084
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-picture
+									img(src='images/camera-icon.png', alt='Picture')
+								div.cd-timeline-content.projects
+									a(href="#")
+										img(src='images/project-4.jpg', alt='')
+										div.project-content
+											h2 Etiam a ultricies
+											span 30 November 2084
+							div.cd-timeline-block
+								div.cd-timeline-img.cd-picture
+									img(src='images/camera-icon.png', alt='Picture')
+								div.cd-timeline-content.projects
+									a(href="#")
+										img(src='images/project-5.jpg', alt='')
+										div.project-content
+											h2 Curabitur interdum
+											span 22 November 2084
+		div#map
+			div.container
+				div.row
+					div.col-md-12
+						h4 Visit Us
+						p This is where we operate
+				div.row
+					div.map-content
+						div#templatemo-map
+		div#third-section
+			div.heading
+				div.container
+					div.row
+						div.col-md-12
+							h2 Send Us A Message
+		div#third-section3
+			div.container
+				div.row
+					div.triangle
+				div.row
+					div.col-md-8
+						form.form
+							div.row
+								div.name.col-md-4
+									input#name(type='text', name='name', placeholder='Name')
+								div.email.col-md-4
+									input#email(type='text', name='email', placeholder='Email')
+								div.subject.col-md-4
+									input#subject(type='text', name='subject', placeholder='Subject')
+							div.row
+								div.text.col-md-12
+									textarea(name='text', placeholder='Message')
+							div.submit
+								input(type='submit', value='Send Now')
+					div.col-md-4
+						div.contact-discription
+							h4 More About Us!
+							p
+								| We are the student of National Chiao Tung University of Taiwan.
+								br
+								br
+								strong Mailing Address:
+								br
+								|                        Natioal Chiao Tung University, 1001 Universerity Road,Hsinchu, Taiwan 300, ROC
+								br
+								br
+								|                         Tel: +886-911-590-066
+								br
+								| 						Email: yichun03@gmail.com
+								br
+								
+
+		footer
+			div.container
+				div.footer-content
+					div.row
+						div.col-md-12
+							div.col-md-4
+								div.copyright-text
+									p
+										| Copyright © 2100
+										a(href='#') Team name
+							div.col-md-4
+								div.back-to-top
+									a(href='#top') Back To Top
+							div.col-md-4
+								div.social-icons
+									ul
+										li
+											a(href='#', class='#')
+												i.fa.fa-facebook
+										li
+											a(href='#', class='#')
+												i.fa.fa-github
+										//li
+											a(href='#', class='#')
+												i.fa.fa-linkedin
+										//li
+											a(href='#', class='#')
+												i.fa.fa-rss
+			// Javascripts
+			script.
+				function initialize()
+				{
+				var mapProp = {
+				center: new google.maps.LatLng(40.7828839,-73.9652425),
+				zoom: 15,
+				scrollwheel: false,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+				var map=new google.maps.Map(document.getElementById("templatemo-map")
+				,mapProp);
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+				google.maps.event.addDomListener(window, 'resize', function()
+				{
+				map.setCenter(center);
+				});
+			script(type='text/javascript', src='js/vendor/bootstrap.min.js')
+			script(type='text/javascript', src='js/custom.js')
+
+
+
+
+
+
+
+
+
