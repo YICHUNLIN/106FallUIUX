@@ -6,5 +6,9 @@ function initMap() {
     center: center,
     zoom: 14
   });
-  
+  var marker = new google.maps.Marker({
+          position: center,
+          map: map,
+          title:"National Chiao Tung University",
+  });
 }
