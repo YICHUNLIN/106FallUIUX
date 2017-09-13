@@ -266,7 +266,7 @@ block content
 						p This is where we operate
 				div.row
 					div.map-content
-						div#templatemo-map
+						div#map-canvas
 		div#third-section
 			div.heading
 				div.container
@@ -343,12 +343,12 @@ block content
 				function initialize()
 				{
 				var mapProp = {
-				center: new google.maps.LatLng(40.7828839,-73.9652425),
+				center: new google.maps.LatLng(24.788068, 120.999012),
 				zoom: 15,
 				scrollwheel: false,
 				mapTypeId:google.maps.MapTypeId.ROADMAP
 				};
-				var map=new google.maps.Map(document.getElementById("templatemo-map")
+				var map=new google.maps.Map(document.getElementById("map-canvas")
 				,mapProp);
 				}
 				google.maps.event.addDomListener(window, 'load', initialize);
