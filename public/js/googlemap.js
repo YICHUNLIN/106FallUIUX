@@ -9,6 +9,6 @@ function initMap() {
   var marker = new google.maps.Marker({
           position: center,
           map: map,
-          title:"National Chiao Tung University",
+          title:"National Chiao Tung Univers",
   });
 }
