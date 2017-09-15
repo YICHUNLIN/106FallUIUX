@@ -1,6 +1,8 @@
-var map;
-function initMap() {
- 
+
+window.onload=function() {
+ var map;
+
+
   var center = {lat:24.788068, lng:120.999012};
   map = new google.maps.Map(document.getElementById('mapcanvas'), {
     center: center,
@@ -12,3 +14,5 @@ function initMap() {
           title:"National Chiao Tung Univers",
   });
 }
+
+
