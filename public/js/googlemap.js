@@ -13,6 +13,8 @@ function initMap() {
           map: map,
           title:"National Chiao Tung Univers",
   });
+
 }
 
+google.maps.event.addDomListener(window, 'load', initMap);
 
