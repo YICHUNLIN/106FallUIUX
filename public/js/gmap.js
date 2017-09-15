@@ -4,7 +4,7 @@ function initMap() {
     zoom: 8,
     center: new google.maps.LatLng(24.788068, 120.999012)
   });
-  
+
   var marker = new google.maps.Marker({
           position: new google.maps.LatLng(24.788068, 120.999012),
           map: map,
@@ -13,7 +13,7 @@ function initMap() {
 
   // We add a DOM event here to show an alert if the DIV containing the
   // map is clicked.
-  google.maps.event.addDomListener(mapDiv, 'click', function() {
+  /*google.maps.event.addDomListener(mapDiv, 'click', function() {
     window.alert('Map was clicked!');
-  });
+  });*/
 }
