@@ -145,6 +145,24 @@ html {
     margin-top: 40px;
 }
 
+#big-banner h4 {
+    margin-top: 100px;
+    font-family: 'Dosis';
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #98d361;
+}
+
+#big-banner p {
+    font-family: 'Dosis';
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #90f461;
+}
 .heading {
     border-bottom: 4px solid #98d361;
     border-top: 4px solid #98d361;
