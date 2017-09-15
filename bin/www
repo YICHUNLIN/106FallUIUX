@@ -6,14 +6,18 @@
 
 var app = require('../app');
 var debug = require('debug')('106-uiux:server');
-var http = require('http');
+var http = require('http')
+    ,https = require('https');
+var ssl = require('../sslLicense');
 
 /**
  * Get port from environment and store in Express.
  */
 
 var port = normalizePort(process.env.PORT || '80');
+var httpsport = normalizePort(process.env.PORT || '443');
 app.set('port', port);
+app.set('httpsport', httpsport);
 
 /**
  * Create HTTP server.
@@ -21,6 +25,7 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+var httpsserver = https.createServer(ssl.options, app);
 /**
  * Listen on provided port, on all network interfaces.
  */
@@ -29,6 +34,9 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
+httpsserver.listen(app.get('httpsport'));
+httpsserver.on('error', onError);
+httpsserver.on('listening', onHttpsListening);
 /**
  * Normalize a port into a number, string, or false.
  */
@@ -87,4 +95,13 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+}
+
+
+function onHttpsListening(){
+  var addr = httpsserver.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe' + addr
+    : 'port' + addr.port;
+  debug('Listening on' + bind);
 }
