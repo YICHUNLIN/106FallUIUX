@@ -15,6 +15,6 @@ function initMap() {
   });
 
 }
-window.onload=initMap();
+//window.onload=initMap();
 //google.maps.event.addDomListener(window, 'load', initMap);
 
