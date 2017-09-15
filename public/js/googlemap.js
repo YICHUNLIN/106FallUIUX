@@ -1,6 +1,6 @@
 
-function initMap() {
  var map;
+function initMap() {
   console.log("mapinit");
 
   var center = {lat:24.788068, lng:120.999012};
