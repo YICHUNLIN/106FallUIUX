@@ -1,7 +1,7 @@
 var service = angular.module('UXD_services',[]);
 
-//var api_addr = "127.0.0.1:3000";
-var api_addr = "uiux.kmtree.me";
+var api_addr = "127.0.0.1:3000";
+//var api_addr = "uiux.kmtree.me";
 
 service.factory('MailService',['$http',function($http){
 	return {
