@@ -1,9 +1,22 @@
 var express = require('express');
 var router = express.Router();
+var mongoose = require( 'mongoose' );
+var User     = mongoose.model( 'User' );
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  /*new User({
+    account    : "1",
+    password  : "2",
+    firstname   : "3",
+    lastname  : "4",
+    description : "5",
+    photo	: "6",
+    updated_at : Date.now()
+  }).save( function( err, todo, count ){
+    res.render( 'index' );
+  });*/
+  res.render( 'index' );
 });
 
 router.get('/milestone1', function(req, res, next){

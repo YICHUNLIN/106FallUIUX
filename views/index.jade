@@ -34,11 +34,11 @@ block content
 								a.home(href='#top') Home
 							li
 								span
-								a.about(href='#first-section') GOal
+								a.about(href='#first-section') Milestones
 							li
 								span
 								a.smoothScroll(href='#team-section') Team
-							li
+							//li
 								span
 								a.portfolio(href='#second-section') Projects
 							li
@@ -62,7 +62,7 @@ block content
 				div.container
 					div.row
 						div.col-md-12
-							h2.header-section-title Goal
+							h2.header-section-title Milestones
 		div#first-section1
 			div.container
 				div.row
@@ -71,51 +71,59 @@ block content
 					div.col-md-12
 						section#cd-timeline.cd-container
 							div.cd-timeline-block
-								div.cd-timeline-img.cd-picture
-									img(src='images/w1.png', alt='Picture')
+								a(href="/milestone1")
+									div.cd-timeline-img.cd-picture
+										img(src='images/w1.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
-									h2 Milestone 1
-									p
-										| Project design problem 
-										//span.blue template
-										//span.green mo
-										//| . This layout is based on Bootstrap v3.1.1 and you may use this template for any website. Credit goes to 
-										//a(rel='nofollow', href='http://unsplash.com') Unsplash
-										//|  for all images.
-							div.cd-timeline-block
+									a(href="/milestone1")
+										h2 Milestone 1
+										strong
+											| Project design problem 
+										br
+										br
+										p
+											| What`s the problem?
+										p
+											| Who is population?
+										p
+											| Why is the problem importent?
+										p
+											| Who are the stakeholders?
+							//div.cd-timeline-block
 								div.cd-timeline-img.cd-movie
 									img(src='images/b2.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
 									h2 Milestone2
 									p
 										| User research 
+									
 										//strong change top icons
 										//|  by looking at guidelines from 
 										//a(rel='nofollow', href='http://fontawesome.info/font-awesome-icon-world-map/') Font Awesome
 										//| . Example: 
 										//strong <i class="fa fa-camera"></i>
-							div.cd-timeline-block
+							//div.cd-timeline-block
 								div.cd-timeline-img.cd-icon
 									img(src='images/w3.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
 									h2 Milestone3
 									p
 										| Personas and Scenarios
-							div.cd-timeline-block
+							//div.cd-timeline-block
 								div.cd-timeline-img.cd-location
 									img(src='images/b4.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
 									h2 Milestone4
 									p
 										| Paper prototype
-							div.cd-timeline-block
+							//div.cd-timeline-block
 								div.cd-timeline-img.cd-location
 									img(src='images/w5.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
 									h2 Milestone5
 									p
 										| PInteractive prototype
-							div.cd-timeline-block
+							//div.cd-timeline-block
 								div.cd-timeline-img.cd-location
 									img(src='images/b6.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
@@ -130,7 +138,7 @@ block content
 				div.container
 					div.row
 						div.col-md-12
-							h2.header-section-title Out Team
+							h2.header-section-title Out Team Member
 		
 		div#team
 			div.container
@@ -159,44 +167,44 @@ block content
 								div.column
 									a(href="#")
 										img.ui.medium.circular.image.img-responsive(src='/images/vic2.png')
-									h3 Name
-									h4 Role
+									h3 洪顗貞
+									h4 清大服科所碩一
 
 								div.column
 									a(href="#")
 										img.ui.medium.circular.image.img-responsive(src='/images/vic2.png')
-									h3 Name
-									h4 Role
+									h3 張洛瑜
+									h4 交大資訊工程系大四
 								div.column
 									a(href="#")
 										img.ui.medium.circular.image.img-responsive(src='/images/vic2.png')
-									h3 Name
-									h4 Role
+									h3 林逸群
+									h4 交大土木工程系碩二
 								div.column
 									a(href="#")
 										img.ui.medium.circular.image.img-responsive(src='/images/vic2.png')
-									h3 Name
-									h4 Role
+									h3 韓舒容
+									h4 交大傳科系大四
 								div.column
 									a(href="#")
 										img.ui.medium.circular.image.img-responsive(src='/images/vic2.png')
-									h3 Name
-									h4 Role
+									h3 林承賢
+									h4 清大服科所碩二
 
 
-		div#cta
+		//div#cta
 			div.container
 				div.row
 					div.col-md-12
 						h4 Projects
 						p What we have done
-		div#second-section
+		//div#second-section
 			div.heading
 				div.container
 					div.row
 						div.col-md-12
 							h2 Finished Work
-		div#second-section
+		//div#second-section
 			div.container
 				div.row
 					div.triangle
@@ -296,18 +304,12 @@ block content
 						div.contact-discription
 							h4 More About Us!
 							p
-								| We are the student of National Chiao Tung University of Taiwan.
+								| We are the students of National Chiao Tung University and National Tsing Hua University of Taiwan.
 								br
 								br
 								strong Mailing Address:
 								br
 								|                        Natioal Chiao Tung University, 1001 Universerity Road,Hsinchu, Taiwan 300, ROC
-								br
-								br
-								|                         Tel: +886-00-000-000
-								br
-								| 						Email: xxxxxx@gmail.com
-								br
 								
 
 		footer
@@ -319,7 +321,7 @@ block content
 								div.copyright-text
 									p
 										| Copyright © 2100
-										a(href='#') Team name
+										a(href='#') IOC5179-第三組
 							div.col-md-4
 								div.back-to-top
 									a(href='#top') Back To Top
@@ -332,9 +334,3 @@ block content
 										li
 											a(href='https://github.com/YICHUNLIN/106FallUIUX', class='#')
 												i.fa.fa-github
-										//li
-											a(href='#', class='#')
-												i.fa.fa-linkedin
-										//li
-											a(href='#', class='#')
-												i.fa.fa-rss
