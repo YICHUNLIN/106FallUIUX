@@ -41,7 +41,7 @@ block content
 							//li
 								span
 								a.portfolio(href='#second-section') Projects
-							li
+							//li
 								span
 								a.map(href='#map') Location
 							li
@@ -77,20 +77,21 @@ block content
 									div.cd-timeline-img.cd-picture
 										img(src='images/w1.png', alt='Picture')
 								div.cd-timeline-content.service-box-content
-									a(href="/milestone1")
+										//a(href="/milestone1")
 										h2 Milestone 1 - 2017/09/20
 										strong
 											| Project design problem 
 										br
 										br
-										p
-											| What`s the problem?
-										p
-											| Who is population?
-										p
-											| Why is the problem importent?
-										p
-											| Who are the stakeholders?
+										a(href="/option1")
+											p
+												| option 1 - 題目1
+										a(href="/option2")
+											p
+												| option 2 - 題目2
+										a(href="/option3")
+											p
+												| option 3 - 題目3
 							//div.cd-timeline-block
 								div.cd-timeline-img.cd-movie
 									img(src='images/b2.png', alt='Picture')
@@ -268,7 +269,7 @@ block content
 										div.project-content
 											h2 Step 6
 											span 22 November 2084
-		div#map
+		//div#map
 			div.container
 				div.row
 					div.col-md-12
