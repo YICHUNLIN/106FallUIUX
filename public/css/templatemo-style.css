@@ -102,9 +102,18 @@ html {
     color: #7cb14a !important;
 }
 
+#milestone-banner {
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
 #big-banner {
     background-image: url(../images/t1.JPG);
-	background-position: center;
+    background-position: center;
     background-size: cover;
     margin-top: 50px;
     width: 100%;
