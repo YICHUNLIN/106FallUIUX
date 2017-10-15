@@ -11,6 +11,11 @@ router.get('/milestone1', function(req, res, next){
 });
 
 
+router.get('/milestone2', function(req, res, next){
+  res.render('milestone2', {"title":"Milestone2"});
+});
+
+
 router.get('/option1', function(req, res, next){
   res.render('option1', {"title":"Option1"});
 });
