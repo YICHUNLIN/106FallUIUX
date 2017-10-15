@@ -14,8 +14,8 @@ var ssl = require('../sslLicense');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '80');
-var httpsport = normalizePort(process.env.PORT || '443');
+var port = normalizePort(process.env.PORT || '2222');
+var httpsport = normalizePort(process.env.PORT || '1111');
 app.set('port', port);
 app.set('httpsport', httpsport);
 
