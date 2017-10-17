@@ -173,7 +173,7 @@ html {
     color: #90f461;
 }
 .heading {
-    border-bottom: 4px solid #98d361;
+    /*border-bottom: 4px solid #98d361;*/
     border-top: 4px solid #98d361;
     width: 100%;
     padding-top: 40px;
