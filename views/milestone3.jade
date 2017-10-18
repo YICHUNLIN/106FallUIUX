@@ -1,0 +1,173 @@
+extends milestoneLayout
+
+block content
+
+
+	header#top.site-header
+		nav.navbar.navbar-default.navbar-fixed-top
+			div.container
+				div.row
+					div.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+							i.fa.fa-bars
+						div.logo-wrapper
+							a.navbar-brand(href='http://www.nctu.edu.tw')
+								p
+									| N
+									em CTU
+					div#main-menu.collapse.navbar-collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								span
+								a.home(href='/') Home
+							li
+								span
+								a.about(href='#problem') Design Problem
+							li
+								span
+								a.smoothScroll(href='#population') Target Population
+							li
+								span
+								a.map(href='#interview') Interview
+							li
+								span
+								a.contact(href='#analysis') Analysis & Findings
+
+	div#milestone-banner
+		div.container
+	div#problem
+		div.heading
+			div.container
+				div.row
+					div.col-md-12
+						h2.header-section-title Design Problem 
+
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					img(src='images/mt.jpg')
+	div#population
+		div.heading
+			div.container
+				div.row
+					div.col-md-12
+						h2.header-section-title Target population
+
+					div.ui.vertical.stripe.quote.segment
+						div.ui.equal.width.stackable.internally.mycelled.grid
+							div.center.aligned.row
+								div.column
+									h3 旅途中的人
+	div#interview
+		div.heading
+			div.container
+				div.row
+					div.col-md-12
+						h2.header-section-title Interview
+
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					h3 11個受訪者
+					h3 3個上班族  + 8 個學生
+					h3 3個女生 + 8 個男生
+					h3 都小於26歲
+					img(src='images/people.png')
+
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					h1 問題方向
+					h4 沒電的過程
+					h4 沒電的經驗
+					h4 如何解決
+					h4 手機使用習慣
+					h4 充電習慣
+
+	div#analysis
+		div.heading
+			div.container
+				div.row
+					div.col-md-12
+						h2.header-section-title Analysis and Findings
+
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					img.ui.Medium.image(src='images/an1.jpg' )
+				div.column
+					img.ui.Medium.image(src='images/an2.JPG')
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					img.ui.Medium.image(src='images/an3.JPG')
+				div.column
+					img.ui.Medium.image(src='images/an5.JPG')
+
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					h1 Key Findings
+					h4 1. 出外時手機沒電會焦慮
+					h4 2. 借電的困擾 & 沒電的困擾
+					h4 3. 會真的在外急須充電是因為 google map & 通訊 & 聯絡
+
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					h1 Design Focus
+					h4 解決困擾
+					h4 沒電的困擾與借電的困擾
+					img(src='images/problem.png' )
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					h1 Consider
+					h2 解決困擾
+					h4 旅途的充電行為
+					h4 手機的使用習慣
+					h4 手機快沒電的處理方式
+					h4 導致充電行為的原因與地點
+					h4 導致借電行為的原因與地點
+					h4 手機沒電的困擾
+					img(src='images/story.png' )
+	div.ui.vertical.stripe.quote.segment
+		div.ui.equal.width.stackable.internally.mycelled.grid
+			div.center.aligned.row
+				div.column
+					h1 want to know about more
+					h4 實際訪問充電的人
+					h4 拓展不同年齡層
+					h4 店家 願意借電給別人的人
+
+
+	footer
+		div.container
+			div.footer-content
+				div.row
+					div.col-md-12
+						div.col-md-4
+							div.copyright-text
+								p
+									| Copyright © 2100
+									a(href='#') IOC5179-第三組
+						div.col-md-4
+							div.back-to-top
+								a(href='#top') Back To Top
+						div.col-md-4
+							div.social-icons
+								ul
+									li
+										a(href='https://www.facebook.com/groups/1714031488608331/?fref=ts', class='#')
+											i.fa.fa-facebook
+									li
+										a(href='https://github.com/YICHUNLIN/106FallUIUX', class='#')
+											i.fa.fa-github

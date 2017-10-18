@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render( 'index' , {"title":"第三組"});
+  res.render( 'index' , {"title":"第三組-充電地圖"});
 });
 
 router.get('/milestone1', function(req, res, next){
@@ -13,6 +13,11 @@ router.get('/milestone1', function(req, res, next){
 
 router.get('/milestone2', function(req, res, next){
   res.render('milestone2', {"title":"Milestone2"});
+});
+
+
+router.get('/milestone3', function(req, res, next){
+  res.render('milestone3', {"title":"Milestone3"});
 });
 
 
